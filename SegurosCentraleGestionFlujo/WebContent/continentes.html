@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+<head>
+<link href="seguroscentrales.css" rel="stylesheet" type="text/css" />
+<title>SegurosCentrales - Detalles del edificio</title>
+</head>
+<body>
+	<!-- Fichero: continentes.jsp -->
+	<h1>Detalles de la poliza de edificios</h1>
+	<h2>
+		Por favor, suministre la informacion sobre su vivienda en el siguiente
+		formulario. A continuacion pulse sobre <i>Enviar</i>
+	</h2>
+	<form action="continentesproceso.jsp" method="post">
+		<table>
+			<tr>
+				<td><label for="tipoPropiedad">Tipo de vivienda:</label></td>
+				<td><select name="tipoPropiedad" size="1">
+						<option value="piso">Piso / Apartamento</option>
+						<option value="adosada">Casa adosada</option>
+						<option value="semiadosada">Casa semiadosada</option>
+						<option value="aislada">Cuatro vientos</option>
+				</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="numeroHabitaciones">Numero de
+						habitaciones:</label></td>
+				<td><select name="numeroHabitaciones" size="1">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">Mas de 5</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><label for="fechaConstruccion">Fecha de
+						construccion:</label></td>
+				<td><select name="fechaConstruccion" size="1">
+						<option value="01/01/1900">Anterior a 1900</option>
+						<option value="01/01/1901">1901 - 1950</option>
+						<option value="01/01/1951">1951 - 1970</option>
+						<option value="01/01/1971">1971 - 1990</option>
+						<option value="01/01/1991">Posterior a 1990</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Tipo de construccion</td>
+				<td><input type="radio" name="tipoConstruccion" value="cemento"
+					checked="checked" />Cemento</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="radio" name="tipoConstruccion" value="madera" />Madera
+				</td>
+			</tr>
+			<tr>
+				<td>Valor estimado de mercado:</td>
+				<td><select name="valorMercado" size="1">
+						<option value="60000">Menos de 60.000</option>
+						<option value="99000">60.000 - 99.000</option>
+						<option value="149000">100.000 - 149.000</option>
+						<option value="199000">150.000 - 199.000</option>
+						<option value="500000">200.000 - 500.000</option>
+						<option value="1000000">Por encima de 500.000</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td><input type="submit" value="Enviar" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

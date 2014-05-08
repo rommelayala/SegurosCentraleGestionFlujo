@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+ "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es">
+<head>
+<link href="seguroscentrales.css" rel="stylesheet" type="text/css" />
+<title>SegurosCentrales - Solicitud de seguros</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+</head>
+<body>
+	<!-- Fichero: seleccionseguros.jsp -->
+	<h1>Seleccione su poliza</h1>
+	<h2>Por favor, seleccione su seguro de edificios, de pertenencias
+		o ambos, marcando las casillas de verificacion</h2>
+	<form action="seleccionsegurosproceso.jsp" method="post">
+		<table>
+			<tr>
+				<td>¿Que clase de seguro <br /> necesita?
+				</td>
+				<td><input type="checkbox" name="continente" checked="checked" />
+					Seguro para edificios</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="checkbox" name="contenido" checked="checked" />
+					Seguro para pertenencias</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Enviar" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
